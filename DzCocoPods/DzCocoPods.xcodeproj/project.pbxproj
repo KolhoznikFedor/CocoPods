@@ -13,6 +13,8 @@
 		84B17B7A27FC9CB600724624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B17B7827FC9CB600724624 /* Main.storyboard */; };
 		84B17B7C27FC9CB800724624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B17B7B27FC9CB800724624 /* Assets.xcassets */; };
 		84B17B7F27FC9CB800724624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B17B7D27FC9CB800724624 /* LaunchScreen.storyboard */; };
+		84B17B8827FC9DF900724624 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 84B17B8727FC9DF900724624 /* NVActivityIndicatorView */; };
+		84B17B8A27FC9DF900724624 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 84B17B8927FC9DF900724624 /* NVActivityIndicatorViewExtended */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B17B8827FC9DF900724624 /* NVActivityIndicatorView in Frameworks */,
+				84B17B8A27FC9DF900724624 /* NVActivityIndicatorViewExtended in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = DzCocoPods;
+			packageProductDependencies = (
+				84B17B8727FC9DF900724624 /* NVActivityIndicatorView */,
+				84B17B8927FC9DF900724624 /* NVActivityIndicatorViewExtended */,
+			);
 			productName = DzCocoPods;
 			productReference = 84B17B6F27FC9CB600724624 /* DzCocoPods.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 84B17B6627FC9CB600724624;
+			packageReferences = (
+				84B17B8627FC9DF900724624 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
 			productRefGroup = 84B17B7027FC9CB600724624 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +371,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84B17B8627FC9DF900724624 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84B17B8727FC9DF900724624 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84B17B8627FC9DF900724624 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		84B17B8927FC9DF900724624 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84B17B8627FC9DF900724624 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84B17B6727FC9CB600724624 /* Project object */;
 }
